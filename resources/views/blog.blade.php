@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
 <nav
 class="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 dark:border-neutral-700 dark:bg-neutral-900 min-h-[68px] relative z-20"
 aria-label="Main navigation">
@@ -84,6 +84,7 @@ aria-label="Main navigation">
 </div>
 </nav>
 
+    <main class="flex-1">
     <h1>Welcome to Blog Page</h1>
     <article>
         <h2>Judul 1 Artikel</h2>
@@ -113,6 +114,8 @@ aria-label="Main navigation">
     
 
     <script src="js/script.js"></script>
+        </article>
+    </main>
 
 <footer class="bg-white dark:bg-neutral-900 pt-16 pb-8 px-4 md:px-8">
 <div class="max-w-7xl mx-auto">

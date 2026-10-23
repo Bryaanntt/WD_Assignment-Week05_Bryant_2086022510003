@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col"></body>
 <nav
 class="flex py-2 px-4 md:px-8 bg-white border-b border-slate-300 dark:border-neutral-700 dark:bg-neutral-900 min-h-[68px] relative z-20"
 aria-label="Main navigation">
@@ -84,12 +84,15 @@ aria-label="Main navigation">
 </div>
 </nav>
 
-    <h1>Welcome to About Page</h1>
-    <h3> Sang Bintang : {{ $nama }}</h3>
+    <main class="flex-1">
+        <h1>Welcome to About Page</h1>
+        <h3> Sang Bintang : {{ $nama }}</h3>
 
     <img src="{{ asset('images/sang_bintang.jpeg') }}" alt="SangBintang" width="600px">
 
     <script src="js/script.js"></script>
+
+    </main>
 
 <footer class="bg-white dark:bg-neutral-900 pt-16 pb-8 px-4 md:px-8">
 <div class="max-w-7xl mx-auto">
